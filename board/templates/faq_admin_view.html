@@ -1,0 +1,60 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Start your development with common landing page.">
+        <meta name="author" content="Devcrud">
+        <title>질문 확인중</title>
+        <!-- font icons -->
+        <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+        <!-- Bootstrap + common main styles -->
+        <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+        
+        <!-- Page Header -->
+        <header class="header header-mini"> 
+            <div class="header-title">소통</div> 
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="link" href="/board/notice">공지사항</a></li>
+                    <li class="breadcrumb-item"><a class="link" href="/board/FAQ">FAQ</a></li>
+                    <li class="breadcrumb-item"><a class="link" href="/board/freeboard">자유게시판</a></li>
+                </ol>
+            </nav>
+        </header> <!-- End Of Page Header -->
+
+        <!-- main content -->
+        <div class="container">
+            <!-- contact section -->
+            <section class="section" id="contact">
+                <div class="container text-center">
+                    <h6 class="section-title mb-5">FAQ</h6>
+                    <!-- contact form -->
+                    <form method="POST" action="faq_admin_view_done" class="contact-form col-md-10 col-lg-8 m-auto" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <input type="text" size="50" class="form-control" value="{{board.board_name}}" name="title" readonly>                 
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <input type="text" size="50" class="form-control" value="{{board.board_text}}" name="text" rows="6" readonly>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <input type="text" size="50" class="form-control" name="answer" rows="6">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <img src= "/media/{{board.board_img}}" width="80%" height="100%"/>                
+                            </div>
+                            <div class="form-group col-sm-12 mt-3">
+                                <input type="submit" value="답변완료" class="btn btn-outline-primary rounded">                  
+                            </div>
+                        </div>
+                    </form><!-- end of contact form -->
+                </div><!-- end of container -->
+            </section><!-- end of contact section -->
+        </div>
+    </body>
+{% endblock %}

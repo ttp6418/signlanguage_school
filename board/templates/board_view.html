@@ -1,0 +1,146 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Start your development with common landing page.">
+		<meta name="author" content="Devcrud">
+		<title>소통 page | 게시판</title>
+		<!-- font icons -->
+		<link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+		<!-- Bootstrap + common main styles -->
+		<link rel="stylesheet" href="{% static 'css/common.css' %}">
+		<script src="https://kit.fontawesome.com/649080e91b.js" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				//login 버튼 클릭
+				$("#btn_like").on("click", function () {
+					// json 형식으로 데이터 set
+					var params = {}
+						
+					// ajax 통신
+					$.ajax({
+						type : "POST",            // HTTP method type(GET, POST) 형식이다.
+						url : "like",      // 컨트롤러에서 대기중인 URL 주소이다.
+						data : params,            // Json 형식의 데이터이다.
+						success : function(res){ // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
+							if(res.rescd=="00"){
+								$("#board_like").html("추천 "+ res.board_like+"&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;조회 "+res.board_view);
+							
+							}else if(res.rescd=="-99"){
+								alert(res.resdesc);
+								return;
+							}else{
+								alert(res.resdesc);
+								return;
+							}
+						},
+						error : function(XMLHttpRequest, textStatus, errorThrown){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
+							alert("통신 실패.")
+						}
+					});
+				});
+			}); 
+			function fn_reg(){
+				if(frm_comment.comment.value.trim()==""){
+					alert('댓글을 입력해주세요!!');
+					return;
+				}else{
+					frm_comment.action="board_comment_write"
+					frm_comment.submit();
+				}
+			}  
+		</script>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+		<form name="frm" action="like" method="post">{% csrf_token %}
+			<input type="hidden" name="board_no" value="{{board.board_no}}">
+		</form>
+		<header class="header header-mini"> 
+			<div class="header-title">소통</div> 
+			<nav aria-label="breadcrumb">
+			   <ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a class="link" href="/board/notice"><span {% if board.board_category == 'notice' %} style="color:#ff7f00; font-weight: bold; font-size: 13pt;"{% endif %}>공지사항</span></a></li>
+				  <li class="breadcrumb-item"><a class="link" href="/board/FAQ"><span {% if board.board_category == 'faq' %} style="color:#ff7f00; font-weight: bold; font-size: 13pt;"{% endif %}>FAQ</span></a></li>
+				  <li class="breadcrumb-item"><a class="link" href="/board/freeboard"><span {% if board.board_category == 'free' %} style="color:#ff7f00; font-weight: bold; font-size: 13pt;"{% endif %}>자유게시판</span></a></li>
+			   </ol>
+			</nav>
+		 </header> <!-- End Of Page Header -->
+		<div class="container">
+			<!-- <h3 class="mt-5"><span>{% if board.board_category == 'free' %}자유게시판{% elif board.board_category == 'faq'%}FAQ{% else %}공지사항{% endif %}</span></h3><br> -->
+
+		 
+		<table class="table table-bordered">
+			<tbody>
+				<tr>
+					<!-- <td class="td_title" style="text-align:center; width:20%;">제목</td> -->
+					<td style="padding:10px;">
+						<span style = "font-size:1.2em;"><b>{% if board.board_category == 'free' %}[자유게시판]{% elif board.board_category == 'faq'%}[FAQ]{% else %}[공지사항]{% endif %} #{{board.board_no}} {{ board.board_name }}</b></span>
+						</p>
+						<span>{{board.board_author.user_nickname}}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{{ board.board_date }}</span>
+						<span id="board_like" style="float: right;">추천 {{ board.board_like }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;조회 {{board.board_view}}</span>
+					</td>
+				</tr>
+				<tr>
+					<!-- <td class="td_title" style="text-align:center; width:20%;">내용</td> -->
+					<td style="padding:10px;">
+						<span>{{ board.board_text }}</span>
+						<p></p>
+						{% if board.board_img %}
+                        	<img src= "/media/{{board.board_img}}" width="80%" height="100%"/>
+						{% endif %}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="d-flex justify-content-center">
+            <a class="btn btn-outline-primary" href="/board/freeboard">전체글</a> &nbsp;
+			{% if board.board_category == 'free' %}
+				<button class="btn btn-primary rounded" id="btn_like"><i class="ti-thumb-up pr-1"></i>추천</button>
+			{% endif %}
+        </div><br>
+		{% if request.user.is_authenticated %}
+				<div style="text-align:right;">
+				{% if board.board_category == 'faq' and board.board_author.is_superuser == 0 and request.user.is_superuser %}
+						<button class="btn btn-outline-primary" onclick="location.href='./faq_admin_view'">답변하기</button>
+				{% endif %}
+				{% if board.board_author.id == request.user.id or request.user.is_superuser %}
+						<button class="btn btn-outline-primary" onclick="location.href='./board_update'">수정</button>
+						<button class="btn btn-outline-primary" onclick="location.href='./board_delete_ok'">삭제</button>
+				{% endif %}
+				</div><br>
+		{% endif %}
+			{% if board.board_category == 'free' %}
+				{% if request.user.is_authenticated %}
+					<form  method="post" name="frm_comment">
+					{% csrf_token %}
+					<table class="table">
+						<tbody>
+							<tr>
+								<td colspan="2" class="td_title" style="text-align:left; padding-left:10px; height:30px;">댓글 쓰기</td>
+							</tr>
+							<tr>
+								<td class="form-group">
+									<textarea class="form-control" name="comment" id="comment" rows="3" placeholder="타인의 권리를 침해하거나 명예를 훼손하는 댓글은 운영원칙 및 관련 법률에 제재를 받을 수 있습니다."></textarea>
+									<p></p>
+									<button class="btn btn-primary btn-smt" onclick="fn_reg()" style="float: right;" style="padding: 10px,10px;">등록</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					</form>
+				{% endif %}
+
+				<ul class="list-unstyled">
+					{% for rep in comment.all %}
+						<li class="reply"><hr>{{rep.comment_user_id.user_nickname}}&nbsp;&nbsp;"{{ rep.comment_content }}"&emsp;&emsp;({{ rep.comment_date}})</li>
+					{% endfor %}
+				</ul>
+				<br>
+			{% endif %}
+		</div>
+	</body>
+{% endblock %}

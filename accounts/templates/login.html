@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with common landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Login Page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + common main styles -->
+	<link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <script src="https://kit.fontawesome.com/649080e91b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <article>
+        <div class = "login_wrapper">
+            <div class="login_logo">
+                <a href="/"><i class="fa-regular fa-user fa-2x"></i></a></div>
+            <form class="login_form", action="login_logic", method="POST">
+                {% csrf_token %}
+                <input id="LOGIN_ID" class = "login_text" type="text" name="username" placeholder="ID/아이디">
+                <input id="LOGIN_PW" class = "login_text" type="password" name="password" placeholder="PW/비밀번호">
+                <label><input type="checkbox" name="login_cookie" value="True">자동로그인 활성화</label>
+                <input type="submit" class="login_btn" value=login/로그인>  
+            </form>
+           
+            <div>
+                <a id="kakao-login-btn" href="{% url 'accounts:kakaoLoginLogic' %}">
+                    <img src="{%static 'imgs/kakao_login.jpg'%}" width="280" height="33" alt="카카오 로그인 버튼" />
+                </a>
+            </div><br>
+            <div>
+                <a class = "login_bottom" href="../login/password_reset" >비밀번호 찾기</a>&emsp;|&emsp;
+                <a class = "login_bottom" href="../signup" ><b>회원가입</b></a>
+            </div>
+        </div>
+    </article>
+
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js"
+            integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/" crossorigin="anonymous"></script>
+    <script>
+        window.Kakao.init('f9574428127abddbb085f73717436891'); // 사용하려는 앱의 JavaScript 키 입력
+    </script>
+    <p id="token-result"></p>
+
+    <script>
+        function kakaoLogin() {
+            Kakao.Auth.authorize({
+            redirectUri: 'http://127.0.0.1:8000',
+            scope:'profile_nickname, profile_image, account_email, gender, birthday',
+            state: 'userme',
+            });
+        }
+    </script>
+
+
+    <!-- core  -->
+    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- common js -->
+    <script src="{% static 'js/common.js' %}"></script>
+</body>
+</html>
+{% endblock %}

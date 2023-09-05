@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br><br><br><br>
+<div class='container'>
+    <h1>게시판</h1>
+    <form action="" method="get">
+        {% csrf_token %}
+        검색어:<input type="text" name="keyword" value="{{q|default:''}}" >
+        <input type="submit" value="검색">
+    </form>    
+    {% for board in board_list %}
+        <a href="{% url 'board:detail' board.no %}"> {{board.name}}</a><br>
+    {% endfor %}
+    <a href="{% url 'board:create' %}">[새 글 쓰기]</a>
+</div>
+{% endblock %}

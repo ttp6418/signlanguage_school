@@ -1,0 +1,61 @@
+{% extends 'base_index.html' %}
+{% block content %}
+    <header class="header header-mini"> 
+        <div class="header-title">내정보</div> 
+    </header> <!-- End Of Page Header -->
+    <style>
+        .a {
+            white-space: normal;
+          }
+    </style>
+    <script>
+        function fn_action(num){
+            if(num == 1){
+                location.href = "update";
+            }else if(num == 2){
+                location.href = "my_board";
+            }else if(num == 3){
+                location.href = "delete_ok";
+            }
+        }
+    </script>    
+    <body>
+        <div class='container'><br><br>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="w-75"><span class="h4">&emsp;회원번호 : &emsp;{{ user.pk }}</span></td>
+                    </tr>
+                    <tr>
+                        <td class="w-75"><span class="h4">&emsp;아이디 : &emsp;{{ user.username }}</span></td>
+                    </tr>
+                    <tr>
+                        <td class="w-75"><span class="h4">&emsp;닉네임 : &emsp;{{user.user_nickname}}</span></td>
+                    </tr>
+                    <tr>
+                        <td class="w-75"><span class="h4">&emsp;e-mail : &emsp;{{user.email}}</span>
+                            <div style="text-align:right">
+                            <button class="btn btn-secondary" onclick="fn_action(1)">회원 수정</button> 
+                            <button class="btn btn-secondary" onclick="fn_action(2)">내가 작성한 글</button>
+                            <button class="btn btn-secondary" onclick="fn_action(3)">회원 탈퇴</button>
+                            </div>                           
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- <table>
+                <form action="my_board" method="POST" style="margin:0;">{% csrf_token %}
+                    <button class="btn btn-secondary" style="float: right;">내가 작성한 글</button>
+                </form>
+                <form action="update" method="POST" style="margin:0;">{% csrf_token %}
+                    <button class="btn btn-secondary" style="float: right;">회원 수정</button>
+                </form>
+                <form action="delete_ok" method="POST" style="margin:0;">{% csrf_token %}
+                    <button class="btn btn-secondary" style="float: right;">회원 탈퇴</button>
+                </form>
+            </table> -->
+
+        </div>
+    </body>
+{% endblock %}

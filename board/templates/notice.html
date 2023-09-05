@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Start your development with common landing page.">
+      <meta name="author" content="Devcrud">
+      <title>소통 page | 게시판</title>
+      <!-- font icons -->
+      <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+      <!-- Bootstrap + common main styles -->
+      <link rel="stylesheet" href="{% static 'css/common.css' %}">
+      <script src="https://kit.fontawesome.com/649080e91b.js" crossorigin="anonymous"></script>
+   </head>
+
+   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+      <!-- Page Header -->
+      <header class="header header-mini"> 
+         <div class="header-title">소통</div> 
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a class="link" href="/board/notice"><span style="color:#ff7f00; font-weight: bold;font-size: 13pt;">공지사항</span></a></li>
+               <li class="breadcrumb-item"><a class="link" href="/board/FAQ">FAQ</a></li>
+               <li class="breadcrumb-item"><a class="link" href="/board/freeboard">자유게시판</a></li>
+            </ol>
+         </nav>
+      </header> <!-- End Of Page Header -->
+
+      <!-- main content -->
+      <div class="container">
+         <!-- <h3 class="mt-5">공지사항</h3><br> -->
+         <table class="table">
+            <thead>
+               <tr>
+                  <th scope="col">#</th>
+                  <th scope="col" width="70%">제목</th>
+                  <th scope="col">작성일</th>
+                  <th scope="col">조회수</th>
+               </tr>
+            </thead>
+            <tbody id="tbody">
+               {% for board in boards %}
+               <tr>
+                  <th scope="row">{{board.board_no}}</th>
+                  <th><a href = "/board/{{board.board_no}}/">{{board.board_name}}</a></th>
+                  <td>{{board.board_date}}</td>
+                  <td>{{board.board_view}}</td>
+               </tr>
+            {% endfor %}
+            </tbody>
+         </table>
+
+         {%if user.is_staff == 1 and user.is_superuser == 1 %}
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+               <a class="link" href="/board/noticeDetail">
+               <button class="btn btn-primary">글쓰기</button></a>
+            </div>
+         {% endif %} 
+
+         <div class="d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                     {% if boards.has_previous %}
+                        <li class="page-item">
+                           <a class="page-link" href="?p=1"><i class="ti-angle-double-left"></i></a>
+                        </li>
+                     {% else %}
+                        <li class="page-item disabled">
+                           <a class="page-link" href="#"><i class="ti-angle-double-left"></i></a></li>
+                     {% endif %}                  
+                     {% if boards.number > 2 %}
+                        <li class="page-item"><a class="page-link" href="?p={{boards.number|add:'-2'}}">{{boards.number|add:"-2"}}</a></li>
+                     {% endif %}
+                     {% if boards.number > 1 %}
+                        <li class="page-item"><a class="page-link" href="?p={{boards.number|add:'-1'}}">{{boards.number|add:"-1"}}</a></li>
+                     {% endif %}
+                     <li class="page-item active"><a class="page-link" href="#">{{boards.number}}</a></li>
+                     {% if boards.paginator.num_pages > boards.number|add:"0" %}
+                        <li class="page-item"><a class="page-link" href="?p={{boards.number|add:'1'}}">{{boards.number|add:"1"}}</a></li>
+                     {% endif %}
+                     {% if boards.paginator.num_pages > boards.number|add:"1" %}
+                        <li class="page-item"><a class="page-link" href="?p={{boards.number|add:'2'}}">{{boards.number|add:"2"}}</a></li>
+                     {% endif %}
+                     {% if boards.has_next %}
+                        <li class="page-item">
+                           <a class="page-link" href="?p={{boards.paginator.num_pages}}"><i class="ti-angle-double-right"></i></a></li>
+                     {% else %}
+                        <li class="page-item disabled">
+                           <a class="page-link" href="#"><i class="ti-angle-double-right"></i></a></li>
+                     {% endif %}
+                  </ul>
+            </nav>
+         </div>
+
+         <div class="d-flex justify-content-center">
+            <div class="form-group" style="float: left;"><input name="keyword" class="form-control form-control-sm" type="text" placeholder="검색" id="search-input"></div>
+            <div class="form-group" style="float: left;"><button class="btn btn-outline-primary btn-sm" onclick="search()" type="button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button></div>
+         </div>
+
+         <script>
+            function search(){
+               var search = document.querySelector("#search-input").value;
+               $('#tbody').empty();
+               
+               $.ajax({
+                     type: 'POST',
+                     url : 'search',
+                     data: {search:search},
+                     dataType:'json',
+      
+                     success: function(data){
+                        console.log("ajax 통신 성공");
+                        var txt = "";
+                        $.each(data, function(idx, obj){
+                           txt += "<tr><td>"+obj.no+"</td>";
+                           txt += "<td width='70%'><a href=>"+obj.name+"</a></td>";
+                           txt += "<td>"+obj.date+"</td>"
+                           txt += "<td>"+obj.view+"</td>"
+                        });
+                        $('#tbody').append(txt);
+                  }
+                  }) 
+            }
+         </script>
+      </div>
+   </body>
+{% endblock %}

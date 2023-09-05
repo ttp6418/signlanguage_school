@@ -1,0 +1,15 @@
+{% extends 'base_index.html' %}
+{% block content %}
+<header class="header header-mini"> 
+    <div class="header-title">글삭제</div> 
+</header> <!-- End Of Page Header -->
+<div class='container'>
+    <h1>게시글 삭제</h1>
+    <form method="POST", action="board_delete">
+        {% csrf_token %}
+        <p>정말로 삭제하시겠습니까?</p>
+        <input type="submit" value="삭제"/>
+    </form>
+    <button type="submit" onclick="location.href='/'">홈으로</button>
+</div>
+{% endblock %}

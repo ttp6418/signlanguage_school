@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <head>
+        <!-- font icons -->
+        <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    </head>
+
+    <header class="header header-mini"> 
+        <div class="header-title">회원탈퇴</div> 
+    </header> <!-- End Of Page Header -->
+
+    <br><br>
+    <body>
+        <div class='container'>
+            <h2>계정삭제</h2>
+            <br>
+            <p class="h4">정말 탈퇴하시겠습니까?<br> 계정 삭제시 관련 컨텐츠 이용에 제약을 받을 수 있습니다.</p><br>
+            <button class="btn btn-outline-primary" type="submit" onclick="location.href='/'"><i class="ti-home"></i>&nbsp;&nbsp;메인으로</button>
+            <form method="POST", action="delete" style="margin: 0;">
+                {% csrf_token %}
+                <br>
+                <button class="btn btn-outline-primary" type="submit"><i class="ti-trash"></i>&nbsp;&nbsp;그래도 탈퇴할래요</button>
+            </form>
+        </div><br>
+    </body>
+{% endblock %}
