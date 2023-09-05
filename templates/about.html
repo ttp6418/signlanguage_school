@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Start your development with common landing page.">
+        <meta name="author" content="Devcrud">
+        <title>소개 page | 소개</title>
+        <!-- font icons -->
+        <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+        <!-- Bootstrap + common main styles -->
+        <link rel="stylesheet" href="{% static 'css/common.css' %}">
+        <script src="https://kit.fontawesome.com/649080e91b.js" crossorigin="anonymous"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+        <!-- Page Header -->
+        <header class="header header-mini"> 
+        <div class="header-title">소개</div> 
+        </header> <!-- End Of Page Header -->
+
+        <!-- main content -->
+        <div class="container"><br><br>
+
+            <!-- about section -->
+            <section class="section pt-0" id="about">
+                <!-- container -->
+                <div class="container text-center">
+                    <!-- about wrapper -->
+                    <div class="about">
+                        <div class="about-img-holder">
+                            <img src="{% static 'imgs/hand-g09661b458_1920.jpg' %}" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, common Landing page">
+                        </div>
+                        <div class="about-caption">
+                            <p class="section-subtitle">수어스쿨</p>
+                            <h2 class="section-title mb-3">수어, 세상과 통하다</h2>
+                            <pre style="font-size: 18px;">
+            일상이 디지털로 변화하면서 디지털 소외계층이 발생하였습니다.
+            그중 청각장애인은 다른 관점으로 보면,
+            언어만 다를 뿐인데 디지털 미디어 교육에 대한 접근이 쉽지 않습니다.
+            이러한 기회를 확장시키기 위해 코딩 교육 제공과 실시간 번역 서비스 및
+            소통의 장을 만들어 활발한 정보교류의 기회를 만들었습니다.
+            수어로 세상을 통하는 날까지 수어스쿨이 함께하겠습니다.</pre>
+                            <button class="btn-rounded btn btn-outline-primary mt-4" onclick="location.href='/'" style="float: right;">메인으로</button>
+                        </div>              
+                    </div><!-- end of about wrapper -->
+                </div><!-- end of container -->
+            </section> <!-- end of about section -->
+        </div>
+    </body>
+{% endblock %}
+    

@@ -1,0 +1,207 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+    <head>
+        <script src="https://kit.fontawesome.com/649080e91b.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                var i=0;
+                function fn_change(){
+                    i++;
+                    //console.log('/static/imgs/hand'+ i%3 +'.png');
+                    $("#mainImg").attr('src','/static/imgs/hand'+ i%3 +'.png');
+                
+                }
+                setInterval(fn_change,2500);
+            }); 
+        </script>
+    </head>
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <!-- <span class="up">안녕하세요!</span>
+                <span class="down">환영합니다:)</span> -->
+            </h1>
+            <img id="mainImg" width="600" height="450" src="{% static 'imgs/hand0.png' %}">
+            <p class="header-subtitle">당신과 함께, 수어스쿨</p>           
+            {% if not request.user.is_authenticated %}
+                <button class="btn btn-primary" id='login_button' onclick="location.href='/accounts/login/'">입장하기 &nbsp;<i class="fa-sharp fa-solid fa-hand-holding-heart"></i></button>
+            {% endif %}
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- service section -->
+    <!-- <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">시작해볼까요?</p>
+            <h6 class="section-title mb-6">Start!</h6> -->
+            <!-- row -->
+            <!-- <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body" onclick="location.href='/education/list'">
+                            <img src="{% static 'imgs/pencil-case.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, common Landing page" class="icon">
+                            <h6 class="title">학습</h6>
+                            <p class="subtitle">코딩 교육 영상(수어 및 텍스트로 번역)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/responsive.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, common Landing page" class="icon">
+                            <h6 class="title">Zoom</h6>
+                            <p class="subtitle">실시간 화상 질의 응답(수어 및 텍스트로 번역)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/toolbox.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, common Landing page" class="icon">
+                            <h6 class="title">다운로드</h6>
+                            <p class="subtitle">교육 영상(유튜브 링크 또는 MP4파일) 업로드하여 수어 및 텍스트로 번역 후 다운로드</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/analytics.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, common Landing page" class="icon">
+                            <h6 class="title">진행사항</h6>
+                            <p class="subtitle">현재 내 학습률 확인하기</p>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div>end of row -->
+        <!-- </div> -->
+    <!-- </section>end of service section -->
+    <!-- educationList section -->
+    <section class="section" id="educationList">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <a id="eduLogo">번역된 코딩강의</a>
+                </div>
+                <div class="col-md-6 col-lg-3"></div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="eduList">
+                        <ul class="nav show">
+                            <li class="item"><button class="link" onclick="subjectList()"><b>모든 강의</b></button></li><br>
+                            {% for sub in subject %}
+                                <li class="item"><button class="link" onclick="education_list_id({{sub.subject_id}})">{{sub.subject_name}}</button></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row" id="portfolio">
+                {% for sub in subject %}
+                    <div class="col-md-4" id="education_border">
+                        <a href="/education/list/{{sub.subject_id}}/" class="portfolio-card">
+                            {% if sub.subject_thumb %}<img src= "/media/{{sub.subject_thumb}}" width="300px" height="200px" class="portfolio-card-img"/>
+                            {% else %}<img src= "{% static 'imgs/왼손코딩.JPG' %}" width="300px" height="200px" class="portfolio-card-img"/>
+                            {% endif %}
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4>{{sub.subject_name}}</h4>
+                                    <a href="/education/list/{{sub.subject_id}}/" id="education_title_border"><h4 id="education_title">{{sub.subject_name}}</h4></a>
+                                </span>&emsp;
+                            </span>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <script>
+        let subjectId = 1;
+
+        // Kakao.init('c089c8172def97eb00c07217cae17495'); // 사용하려는 앱의 JavaScript 키 입력
+        function subjectList(){
+            $('#portfolio').empty();
+            $.ajax({
+                type: 'POST',
+                url : 'subjectList',
+                dataType: 'json',
+
+                success: function(data){
+                   var txt = "";
+
+                    $.each(data, function(idx, obj){
+                        txt += '<div class="col-md-4" id="education_border"> \
+                                    <a href="/education/list/' + obj.id +'/" class="portfolio-card">'
+                        txt += '<img src= "/media/'+ obj.image +'" width="300px" height="200px" class="portfolio-card-img"/>'
+                        txt += '<span class="portfolio-card-overlay"> \
+                                    <span class="portfolio-card-caption">'
+                        txt += '<h4>'+ obj.name + '</h4>'
+                        txt += '<a href="/education/list/'+ obj.id +' " id="education_title_border"><h4 id="education_title">' + obj.name + '</h4></a>'
+                        txt += '</span>&emsp;</span></a></div>'
+                    });
+
+                    $('#portfolio').append(txt);
+                }
+             }) 
+        }
+
+        function videoList(subjectId){
+            $('#portfolio').empty();
+            $.ajax({
+                type: 'POST',
+                url : 'basicEduList',
+                data: {sebject_id: subjectId},
+                dataType: 'json',
+
+                success: function(data){
+                   var txt = "";
+
+                    $.each(data, function(idx, obj){
+                        console.log(obj.image);
+
+                        txt += '<div class="col-md-4" id="education_border"> \
+                                    <a href="/education/list/' + obj.sebject_id +'/'+ obj.name +'/" class="portfolio-card">'
+                        txt += '<img src= "/media/'+ obj.image +'" width="300px" height="200px" class="portfolio-card-img"/>'
+
+                        txt += '<span class="portfolio-card-overlay"> \
+                                    <span class="portfolio-card-caption">'
+                        txt += '<p class="font-weight-normal">'+ obj.text + '</p></span></span>'
+                        txt += '<a href="/education/list/'+ obj.sebject_id +'/'+ obj.name +'" id="education_title_border"><h4 id="education_title">' + obj.name + '</h4></a>'
+                        txt += '</span>&emsp;</span></a></div>'
+                    });
+                    $('#portfolio').append(txt);
+                }
+             }) 
+        }
+
+        function education_list_id(id){
+            subjectId = id;
+            videoList(subjectId);
+        }
+
+    </script> 
+{% endblock %}
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js"
+    integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/"></script>   
+{% comment %} <script>
+  displayToken()
+  function displayToken() {
+    Kakao.API.request({
+        url: '/v2/user/me',
+    })
+
+    var token = getCookie('authorize-access-token');
+
+    if(token) {
+      Kakao.Auth.setAccessToken(token);
+      document.querySelector('#login_button').style.visibility = 'hidden';
+      alert("카카오로 로그인 중");
+    }
+  }
+
+  function getCookie(name) {
+    var parts = document.cookie.split(name + '=');
+    if (parts.length === 2) { return parts[1].split(';')[0]; }
+  }
+</script> {% endcomment %}

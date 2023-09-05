@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>온라인 수어 스쿨</title>
+        <!-- font icons -->
+        <link rel="shortcut icon" href="{% static 'assets/favicon.ico' %}">
+        <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+        <!-- Bootstrap + common main styles -->
+        <link rel="stylesheet" href="{% static 'css/common.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+        <!-- Page Navbar -->
+        <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+            <div class="container">
+                <a class="logo" href="/" >Sign Language</a>         
+                <ul class="nav">
+                    <li class="item"><a class="link" href="/">메인</a></li>
+                    <li class="item"><a class="link" href="/about">수어스쿨</a></li>
+                    <li class="item"><a class="link" href="/education/list">학습</a></li>
+                    <li class="item"><a class="link" href="/translation">번역</a></li>
+                    <!-- <li class="item"><a class="link" href="#blog">교정</a></li> -->
+                    <li class="item"><a class="link" href="/board/notice">소통</a></li>
+                    <li class="item">
+                        <form class="d-flex">
+                            {% if request.user.is_authenticated %}
+                                <li class="nav-item"><a class="btn btn-outline" href="/accounts/{{user.pk}}/" class="top-menu"><span class="glyphicon glyphicon-ok"><b>{{user.user_nickname}}</b></span></a>&nbsp;
+                                <li class="nav-item"><a class="btn btn-primary" href="/accounts/logout/" onclick="location.href='/accounts/kakaoLogout/'" class="top-menu"><span class="glyphicon glyphicon-ok" style="color:white;">로그아웃</span></a>
+                            {% else %}
+                                <li class="nav-item"><a class="btn btn-primary" href="/accounts/login" class="top-menu"><span class="glyphicon glyphicon-remove" style="color:white;">로그인</span></a>
+                            {% endif %}
+                            {% if request.user.is_superuser and request.user.is_staff %}
+                                <li class="nav-item"><a class="btn btn-primary" href="/admin" class="top-menu"><span class="glyphicon glyphicon-remove" style="color:white;">관리자 페이지</span></a>
+                            {% endif %}
+                        </form>
+                    </li>
+                </ul>
+                <a href="javascript:void(0);" id="nav-toggle" class="hamburger hamburger--elastic">
+                    <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                    </div>
+                </a>
+            </div>          
+        </nav><!-- End of Page Navbar -->
+        <div style="height : 730px;  ">
+        {% block content %} 
+        {% endblock %}
+        </div>         
+        <!-- core  -->
+        <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+        <!-- bootstrap 3 affix -->
+        <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+        <!-- common js -->
+        <script src="{% static 'js/common.js' %}"></script>
+        {% include 'footer.html' %}
+    </body>
+</html>
