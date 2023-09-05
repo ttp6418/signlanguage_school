@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+12
+__pycache__/
+*.py[cod]
+.idea
+.env
+login.txt
+secrets.json
+google.json
+db.sqlite3
+info.sql
+info2.sql
+bigprojstt-2775effac8a3.json
+# models/function/word
+# models/function/sentence
+videos
