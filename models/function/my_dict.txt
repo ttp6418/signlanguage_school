@@ -1,0 +1,4 @@
+코딩	NNP
+비전공자	NNP
+코댕	NNP
+의	JKS
