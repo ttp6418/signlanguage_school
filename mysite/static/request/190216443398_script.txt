@@ -1,0 +1,5 @@
+바닷속에서 start_time 0.0 end_time 0.7
+느닷없이 start_time 0.7 end_time 1.2
+소용돌이가 start_time 1.2 end_time 1.9
+생기기 start_time 1.9 end_time 2.2
+시작합니다 start_time 2.2 end_time 2.6
