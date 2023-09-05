@@ -1,0 +1,1064 @@
+2022-12-14 15:03:41,268 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:03:49,980 [WARNING] django.request: Not Found: /static/imgs/computer-ge1f1c16fc_1920.jpg
+2022-12-14 15:03:49,983 [WARNING] django.request: Not Found: /static/imgs/code-g1c8ee8f4e_1920.jpg
+2022-12-14 15:03:49,985 [WARNING] django.request: Not Found: /static/imgs/software-developer-g27c021811_1920.jpg
+2022-12-14 15:03:49,987 [WARNING] django.request: Not Found: /static/imgs/artificial-intelligence-g4cb8b6ddb_1920.jpg
+2022-12-14 15:03:53,528 [WARNING] django.request: Not Found: /static/imgs/computer-ge1f1c16fc_1920.jpg
+2022-12-14 15:03:53,529 [WARNING] django.request: Not Found: /static/imgs/code-g1c8ee8f4e_1920.jpg
+2022-12-14 15:03:53,530 [WARNING] django.request: Not Found: /static/imgs/software-developer-g27c021811_1920.jpg
+2022-12-14 15:03:53,531 [WARNING] django.request: Not Found: /static/imgs/artificial-intelligence-g4cb8b6ddb_1920.jpg
+2022-12-14 15:05:12,692 [WARNING] django.request: Not Found: /static/imgs/computer-ge1f1c16fc_1920.jpg
+2022-12-14 15:05:12,692 [WARNING] django.request: Not Found: /static/imgs/artificial-intelligence-g4cb8b6ddb_1920.jpg
+2022-12-14 15:05:12,693 [WARNING] django.request: Not Found: /static/imgs/software-developer-g27c021811_1920.jpg
+2022-12-14 15:05:12,693 [WARNING] django.request: Not Found: /static/imgs/code-g1c8ee8f4e_1920.jpg
+2022-12-14 15:14:37,351 [WARNING] django.request: Not Found: /static/imgs/computer-ge1f1c16fc_1920.jpg
+2022-12-14 15:14:37,355 [WARNING] django.request: Not Found: /static/imgs/code-g1c8ee8f4e_1920.jpg
+2022-12-14 15:14:37,356 [WARNING] django.request: Not Found: /static/imgs/software-developer-g27c021811_1920.jpg
+2022-12-14 15:14:37,358 [WARNING] django.request: Not Found: /static/imgs/artificial-intelligence-g4cb8b6ddb_1920.jpg
+2022-12-14 15:14:45,861 [WARNING] django.request: Not Found: /static/imgs/computer-ge1f1c16fc_1920.jpg
+2022-12-14 15:14:45,862 [WARNING] django.request: Not Found: /static/imgs/code-g1c8ee8f4e_1920.jpg
+2022-12-14 15:14:45,863 [WARNING] django.request: Not Found: /static/imgs/artificial-intelligence-g4cb8b6ddb_1920.jpg
+2022-12-14 15:14:45,864 [WARNING] django.request: Not Found: /static/imgs/software-developer-g27c021811_1920.jpg
+2022-12-14 15:15:06,937 [WARNING] django.request: Not Found: /static/imgs/computer-ge1f1c16fc_1920.jpg
+2022-12-14 15:15:06,938 [WARNING] django.request: Not Found: /static/imgs/code-g1c8ee8f4e_1920.jpg
+2022-12-14 15:15:06,939 [WARNING] django.request: Not Found: /static/imgs/software-developer-g27c021811_1920.jpg
+2022-12-14 15:15:06,939 [WARNING] django.request: Not Found: /static/imgs/artificial-intelligence-g4cb8b6ddb_1920.jpg
+2022-12-14 15:15:12,837 [WARNING] django.request: Not Found: /media/
+2022-12-14 15:15:16,251 [WARNING] django.request: Not Found: /media/images/청각장애_도움_사이트_1.png
+2022-12-14 15:15:20,345 [WARNING] django.request: Not Found: /static/imgs/computer-ge1f1c16fc_1920.jpg
+2022-12-14 15:15:20,352 [WARNING] django.request: Not Found: /static/imgs/code-g1c8ee8f4e_1920.jpg
+2022-12-14 15:15:20,354 [WARNING] django.request: Not Found: /static/imgs/software-developer-g27c021811_1920.jpg
+2022-12-14 15:15:20,355 [WARNING] django.request: Not Found: /static/imgs/artificial-intelligence-g4cb8b6ddb_1920.jpg
+2022-12-14 15:15:53,641 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-14 15:28:30,130 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:31:17,367 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:31:18,423 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:32:10,577 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:32:11,628 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:33:24,434 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:33:25,435 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:35:25,988 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:35:27,246 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:35:43,475 [ERROR] django.request: Internal Server Error: /accounts/login/login_logic
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\clickjacking.py", line 16, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 133, in login_logic
+    logger.log('login : ' + str(username) + str(ip))
+TypeError: log() missing 2 required positional arguments: 'level' and 'msg'
+2022-12-14 15:36:28,406 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:36:29,622 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:36:40,099 [ERROR] django.request: Internal Server Error: /accounts/login/login_logic
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\clickjacking.py", line 16, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 133, in login_logic
+    logger.log(logging.debug,'login : ' + str(username) + str(ip))
+  File "C:\Users\82107\anaconda3\lib\logging\__init__.py", line 1496, in log
+    raise TypeError("level must be an integer")
+TypeError: level must be an integer
+2022-12-14 15:37:02,422 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:37:03,785 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:38:18,705 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:38:19,844 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:41:46,102 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:41:47,379 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:43:13,095 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-14 15:43:14,282 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:46:28,581 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-14 15:46:29,623 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:46:46,121 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-14 15:46:47,125 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:47:13,765 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-14 15:47:14,880 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:47:25,068 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-14 15:47:26,127 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:47:57,173 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\urls.py changed, reloading.
+2022-12-14 15:47:58,173 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:48:59,130 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-14 15:49:00,137 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:49:07,098 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-14 15:49:08,204 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:50:38,563 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-14 15:50:39,566 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:50:59,852 [WARNING] django.request: Not Found: /media/images/청각장애_도움_사이트_1.png
+2022-12-14 15:51:09,362 [WARNING] django.request: Not Found: /media/images/IMG_6926.JPG
+2022-12-14 15:52:03,469 [WARNING] django.request: Not Found: /media/images/m.jpg
+2022-12-14 15:57:26,963 [WARNING] django.request: Not Found: /media/images/청각장애_도움_사이트_1.png
+2022-12-14 15:57:29,288 [WARNING] django.request: Not Found: /board/22/board_delete
+2022-12-14 15:58:00,854 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\urls.py changed, reloading.
+2022-12-14 15:58:01,898 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-14 15:58:06,427 [WARNING] django.request: Not Found: /media/images/청각장애_도움_사이트_1.png
+2022-12-14 15:58:08,864 [ERROR] django.request: Internal Server Error: /board/22/board_delete
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: board_delete() got an unexpected keyword argument 'board_id'
+2022-12-14 15:58:33,542 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-15 15:35:29,362 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:37:26,069 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\urls.py changed, reloading.
+2022-12-15 15:37:27,226 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:37:34,678 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\urls.py changed, reloading.
+2022-12-15 15:37:35,708 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:37:51,506 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:38:26,062 [WARNING] django.request: Not Found: /board/
+2022-12-15 15:40:09,326 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-15 15:40:10,396 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:40:21,555 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-15 15:40:22,585 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:40:46,939 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-15 15:40:48,015 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:41:33,196 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-15 15:41:34,397 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:42:02,454 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-15 15:42:03,596 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:42:09,159 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-15 15:42:10,198 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:42:48,237 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:42:49,434 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:43:44,902 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:43:46,035 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:44:03,102 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:44:04,129 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:44:12,872 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:44:13,930 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:44:40,857 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:44:41,990 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:44:48,792 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:44:49,853 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:45:12,477 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:45:13,660 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:45:33,942 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:45:35,074 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:45:48,628 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:45:49,713 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:45:57,381 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:45:58,553 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:46:04,744 [INFO] my: admin이가 로그아웃함
+2022-12-15 15:49:22,608 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:49:23,726 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:49:39,411 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:49:40,532 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:49:51,789 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:49:52,771 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:51:09,324 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:51:10,455 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:51:36,161 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:51:37,163 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:51:50,173 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\apps.py changed, reloading.
+2022-12-15 15:51:51,317 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:52:16,509 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:52:17,564 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:52:42,193 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:52:43,217 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:53:06,255 [ERROR] django.request: Internal Server Error: /accounts/signup/idCheck
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 107, in idCheck
+    return HttpResponse(json.dumps(context))
+UnboundLocalError: local variable 'context' referenced before assignment
+2022-12-15 15:53:07,686 [ERROR] django.request: Internal Server Error: /accounts/signup/idCheck
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 107, in idCheck
+    return HttpResponse(json.dumps(context))
+UnboundLocalError: local variable 'context' referenced before assignment
+2022-12-15 15:53:08,259 [ERROR] django.request: Internal Server Error: /accounts/signup/idCheck
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 107, in idCheck
+    return HttpResponse(json.dumps(context))
+UnboundLocalError: local variable 'context' referenced before assignment
+2022-12-15 15:53:11,560 [ERROR] django.request: Internal Server Error: /accounts/signup/idCheck
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 107, in idCheck
+    return HttpResponse(json.dumps(context))
+UnboundLocalError: local variable 'context' referenced before assignment
+2022-12-15 15:53:11,696 [ERROR] django.request: Internal Server Error: /accounts/signup/idCheck
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 107, in idCheck
+    return HttpResponse(json.dumps(context))
+UnboundLocalError: local variable 'context' referenced before assignment
+2022-12-15 15:53:11,849 [ERROR] django.request: Internal Server Error: /accounts/signup/idCheck
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 107, in idCheck
+    return HttpResponse(json.dumps(context))
+UnboundLocalError: local variable 'context' referenced before assignment
+2022-12-15 15:53:11,995 [ERROR] django.request: Internal Server Error: /accounts/signup/idCheck
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 107, in idCheck
+    return HttpResponse(json.dumps(context))
+UnboundLocalError: local variable 'context' referenced before assignment
+2022-12-15 15:53:29,706 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:53:30,878 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:54:28,786 [ERROR] django.request: Internal Server Error: /accounts/signup/signup_logic
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\clickjacking.py", line 16, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 94, in signup_logic
+    logger.info(request.POST.get('username') + '이가 회원가입함' + get_client_ip())
+TypeError: get_client_ip() missing 1 required positional argument: 'request'
+2022-12-15 15:55:28,583 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:55:29,755 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:56:11,061 [INFO] my: numpy이가 회원가입함127.0.0.1
+2022-12-15 15:56:58,092 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:56:59,169 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 15:59:33,520 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 15:59:34,646 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:00:00,903 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:00:01,917 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:00:29,952 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:00:31,055 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:00:59,348 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:01:00,406 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:01:20,654 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:01:21,760 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:01:33,101 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:01:34,219 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:02:05,088 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:02:06,133 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:02:41,498 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:02:42,538 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:02:57,258 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:02:58,429 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:03:14,411 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:03:15,558 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:04:16,959 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:04:18,011 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:05:34,833 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:05:35,894 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:07:03,134 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:07:04,187 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:07:09,541 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:07:10,607 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:07:28,317 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2022-12-15 16:07:29,348 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:07:47,354 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\apps.py changed, reloading.
+2022-12-15 16:07:48,443 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:07:58,671 [INFO] django.utils.autoreload: C:\dev\bigproject-1\education\apps.py changed, reloading.
+2022-12-15 16:07:59,790 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:08:20,266 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:08:21,352 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:08:57,717 [INFO] django.utils.autoreload: C:\dev\bigproject-1\education\views.py changed, reloading.
+2022-12-15 16:08:58,799 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:09:31,812 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:09:32,904 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:13:48,849 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:13:49,838 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:15:48,757 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:15:49,828 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:16:21,578 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:16:22,692 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:16:31,697 [INFO] my: numpy이가 로그아웃함 127.0.0.1
+2022-12-15 16:16:39,422 [INFO] my: admin이가 로그인함 127.0.0.1
+2022-12-15 16:17:28,645 [INFO] my: faq2345
+2022-12-15 16:18:49,315 [INFO] my: admin이가 로그아웃함 127.0.0.1
+2022-12-15 16:20:47,001 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:20:48,237 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:21:28,107 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:21:29,292 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:21:40,679 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:21:41,828 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:21:54,237 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:21:55,295 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:22:12,007 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:22:13,059 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:22:32,037 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:22:33,170 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:22:51,308 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:22:52,453 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:23:11,779 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:23:12,852 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:24:35,411 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:24:36,431 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:25:14,822 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:25:15,911 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:26:24,118 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:26:25,212 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:26:55,997 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:26:57,087 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:27:15,029 [INFO] my: admin이가 로그인함 127.0.0.1
+2022-12-15 16:30:45,444 [ERROR] django.request: Internal Server Error: /board/faq_admin_write_save
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\board\views.py", line 220, in faq_admin_write_save
+    logger.info(new_board.board_name + new_board.board_text + new_board.board_author.username + new_board.board_img + '가 faq 공지로 등록됨 ' + get_client_ip(request))
+TypeError: can only concatenate str (not "ImageFieldFile") to str
+2022-12-15 16:33:07,641 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:33:08,837 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:33:14,839 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:33:16,100 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:34:26,983 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2022-12-15 16:34:28,176 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:34:42,403 [INFO] my: ereradmin가 faq 공지로 등록됨 127.0.0.1
+2022-12-15 16:37:16,358 [INFO] django.utils.autoreload: C:\dev\bigproject-1\education\views.py changed, reloading.
+2022-12-15 16:37:17,446 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:37:25,272 [INFO] django.utils.autoreload: C:\dev\bigproject-1\education\views.py changed, reloading.
+2022-12-15 16:37:26,385 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:37:51,480 [INFO] django.utils.autoreload: C:\dev\bigproject-1\education\views.py changed, reloading.
+2022-12-15 16:37:52,588 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:41:27,729 [INFO] django.utils.autoreload: C:\dev\bigproject-1\education\urls.py changed, reloading.
+2022-12-15 16:41:28,752 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:42:08,541 [INFO] django.utils.autoreload: C:\dev\bigproject-1\education\views.py changed, reloading.
+2022-12-15 16:42:09,570 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 16:46:01,480 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2022-12-15 16:46:02,441 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 17:02:25,996 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 17:03:20,020 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 17:07:33,732 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2022-12-15 17:08:41,651 [WARNING] django.request: Not Found: /favicon.ico
+2022-12-15 17:12:23,446 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2023-01-06 09:55:22,426 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-06 09:55:55,120 [INFO] my: admin이가 로그인함 127.0.0.1
+2023-01-06 09:59:04,171 [INFO] my: admin이가 로그아웃함 127.0.0.1
+2023-01-06 10:26:43,971 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2023-01-06 10:26:45,326 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-06 10:49:44,491 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-06 10:51:15,861 [INFO] my: admin이가 로그인함 127.0.0.1
+2023-01-06 11:08:53,613 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 09:20:24,215 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 09:21:07,091 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 09:23:03,164 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 191, in retry_target
+    return target()
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 120, in _done_or_raise
+    raise _OperationNotComplete()
+google.api_core.future.polling._OperationNotComplete
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 137, in _blocking_poll
+    polling(self._done_or_raise)(retry=retry)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 349, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 207, in retry_target
+    raise exceptions.RetryError(
+google.api_core.exceptions.RetryError: Deadline of 90.0s exceeded while calling target function, last exception: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 89, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 35, in youtube_source_function
+    audio_to_text(filepath, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 152, in audio_to_text
+    transcribe_gcs_with_word_time_offsets(gsc_uri, 'ko-KR', writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 112, in transcribe_gcs_with_word_time_offsets
+    result = operation.result(timeout=90)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 256, in result
+    self._blocking_poll(timeout=timeout, retry=retry, polling=polling)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 139, in _blocking_poll
+    raise concurrent.futures.TimeoutError(
+concurrent.futures._base.TimeoutError: Operation did not complete within the designated timeout of 90 seconds.
+2023-01-10 10:10:13,849 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 89, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 33, in youtube_source_function
+    filepath = youtube_video(url, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\youtube_video.py", line 6, in youtube_video
+    yt = YouTube(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 71, in __init__
+    self.video_id = extract.video_id(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\extract.py", line 133, in video_id
+    return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\helpers.py", line 129, in regex_search
+    raise RegexMatchError(caller="regex_search", pattern=pattern)
+pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-01-10 10:14:09,126 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:14:10,845 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:14:23,268 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:14:24,492 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:14:32,257 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 90, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 33, in youtube_source_function
+    filepath = youtube_video(url, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\youtube_video.py", line 6, in youtube_video
+    yt = YouTube(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 71, in __init__
+    self.video_id = extract.video_id(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\extract.py", line 133, in video_id
+    return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\helpers.py", line 129, in regex_search
+    raise RegexMatchError(caller="regex_search", pattern=pattern)
+pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-01-10 10:14:35,156 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 90, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 33, in youtube_source_function
+    filepath = youtube_video(url, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\youtube_video.py", line 6, in youtube_video
+    yt = YouTube(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 71, in __init__
+    self.video_id = extract.video_id(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\extract.py", line 133, in video_id
+    return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\helpers.py", line 129, in regex_search
+    raise RegexMatchError(caller="regex_search", pattern=pattern)
+pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-01-10 10:14:51,374 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 90, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 33, in youtube_source_function
+    filepath = youtube_video(url, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\youtube_video.py", line 7, in youtube_video
+    stream = yt.streams.get_highest_resolution()
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 295, in streams
+    self.check_availability()
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 222, in check_availability
+    raise exceptions.VideoUnavailable(video_id=self.video_id)
+pytube.exceptions.VideoUnavailable: _wcZRdQFqY0 is unavailable
+2023-01-10 10:15:25,485 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:15:26,806 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:17:58,504 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 191, in retry_target
+    return target()
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 120, in _done_or_raise
+    raise _OperationNotComplete()
+google.api_core.future.polling._OperationNotComplete
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 137, in _blocking_poll
+    polling(self._done_or_raise)(retry=retry)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 349, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 207, in retry_target
+    raise exceptions.RetryError(
+google.api_core.exceptions.RetryError: Deadline of 90.0s exceeded while calling target function, last exception: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 92, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 35, in youtube_source_function
+    audio_to_text(filepath, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 152, in audio_to_text
+    transcribe_gcs_with_word_time_offsets(gsc_uri, 'ko-KR', writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 112, in transcribe_gcs_with_word_time_offsets
+    result = operation.result(timeout=90)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 256, in result
+    self._blocking_poll(timeout=timeout, retry=retry, polling=polling)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 139, in _blocking_poll
+    raise concurrent.futures.TimeoutError(
+concurrent.futures._base.TimeoutError: Operation did not complete within the designated timeout of 90 seconds.
+2023-01-10 10:20:24,245 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:20:35,403 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:20:44,299 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:21:30,603 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:22:05,080 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:22:27,525 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:22:49,143 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:23:20,169 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:23:50,288 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:26:09,355 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 191, in retry_target
+    return target()
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 120, in _done_or_raise
+    raise _OperationNotComplete()
+google.api_core.future.polling._OperationNotComplete
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 137, in _blocking_poll
+    polling(self._done_or_raise)(retry=retry)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 349, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 207, in retry_target
+    raise exceptions.RetryError(
+google.api_core.exceptions.RetryError: Deadline of 90.0s exceeded while calling target function, last exception: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 92, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 35, in youtube_source_function
+    audio_to_text(filepath, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 152, in audio_to_text
+    transcribe_gcs_with_word_time_offsets(gsc_uri, 'ko-KR', writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 112, in transcribe_gcs_with_word_time_offsets
+    result = operation.result(timeout=90)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 256, in result
+    self._blocking_poll(timeout=timeout, retry=retry, polling=polling)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 139, in _blocking_poll
+    raise concurrent.futures.TimeoutError(
+concurrent.futures._base.TimeoutError: Operation did not complete within the designated timeout of 90 seconds.
+2023-01-10 10:28:15,486 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:30:08,517 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 191, in retry_target
+    return target()
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 120, in _done_or_raise
+    raise _OperationNotComplete()
+google.api_core.future.polling._OperationNotComplete
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 137, in _blocking_poll
+    polling(self._done_or_raise)(retry=retry)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 349, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 207, in retry_target
+    raise exceptions.RetryError(
+google.api_core.exceptions.RetryError: Deadline of 90.0s exceeded while calling target function, last exception: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 92, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 35, in youtube_source_function
+    audio_to_text(filepath, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 152, in audio_to_text
+    transcribe_gcs_with_word_time_offsets(gsc_uri, 'ko-KR', writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 112, in transcribe_gcs_with_word_time_offsets
+    result = operation.result(timeout=90)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 256, in result
+    self._blocking_poll(timeout=timeout, retry=retry, polling=polling)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 139, in _blocking_poll
+    raise concurrent.futures.TimeoutError(
+concurrent.futures._base.TimeoutError: Operation did not complete within the designated timeout of 90 seconds.
+2023-01-10 10:32:25,466 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 191, in retry_target
+    return target()
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 120, in _done_or_raise
+    raise _OperationNotComplete()
+google.api_core.future.polling._OperationNotComplete
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 137, in _blocking_poll
+    polling(self._done_or_raise)(retry=retry)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 349, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\retry.py", line 207, in retry_target
+    raise exceptions.RetryError(
+google.api_core.exceptions.RetryError: Deadline of 90.0s exceeded while calling target function, last exception: 
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 92, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 35, in youtube_source_function
+    audio_to_text(filepath, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 152, in audio_to_text
+    transcribe_gcs_with_word_time_offsets(gsc_uri, 'ko-KR', writepath, filename)
+  File "C:\dev\bigproject-1\models\function\audio_to_text.py", line 112, in transcribe_gcs_with_word_time_offsets
+    result = operation.result(timeout=90)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 256, in result
+    self._blocking_poll(timeout=timeout, retry=retry, polling=polling)
+  File "C:\Users\82107\anaconda3\lib\site-packages\google\api_core\future\polling.py", line 139, in _blocking_poll
+    raise concurrent.futures.TimeoutError(
+concurrent.futures._base.TimeoutError: Operation did not complete within the designated timeout of 90 seconds.
+2023-01-10 10:35:57,125 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:43:51,678 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:46:01,624 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:46:03,534 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:46:43,947 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:46:45,256 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:46:55,542 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:46:56,843 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:48:22,363 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:48:23,776 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:48:48,481 [WARNING] django.request: Not Found: /translation/url_download_f
+2023-01-10 10:49:21,307 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\urls.py changed, reloading.
+2023-01-10 10:49:22,634 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:49:35,487 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\urls.py changed, reloading.
+2023-01-10 10:49:36,876 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:50:08,503 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:50:26,529 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:50:56,987 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:50:58,306 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:51:16,333 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 10:51:17,638 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 10:54:03,170 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 10:54:29,229 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 12:28:02,273 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 12:28:16,356 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 12:28:21,913 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 12:28:25,580 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 12:29:09,999 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 13:44:53,773 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 17:01:31,904 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:01:33,452 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:02:04,321 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 92, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 33, in youtube_source_function
+    filepath = youtube_video(url, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\youtube_video.py", line 6, in youtube_video
+    yt = YouTube(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 71, in __init__
+    self.video_id = extract.video_id(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\extract.py", line 133, in video_id
+    return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\helpers.py", line 129, in regex_search
+    raise RegexMatchError(caller="regex_search", pattern=pattern)
+pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-01-10 17:02:04,458 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 17:03:05,125 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:03:06,477 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:03:45,949 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:03:47,778 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:13:44,356 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:13:45,761 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:14:04,035 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 91, in url_download
+    try: res = urlopen(vd); print(res.status)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 328, in __init__
+    self.full_url = url
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 354, in full_url
+    self._parse()
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'ㅁ'
+2023-01-10 17:14:39,049 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 1350, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\82107\anaconda3\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\82107\anaconda3\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\82107\anaconda3\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\82107\anaconda3\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "C:\Users\82107\anaconda3\lib\http\client.py", line 950, in send
+    self.connect()
+  File "C:\Users\82107\anaconda3\lib\http\client.py", line 1424, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+  File "C:\Users\82107\anaconda3\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\82107\anaconda3\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\82107\anaconda3\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 91, in url_download
+    try: res = urlopen(vd); print(res.status)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 1393, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 1353, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 2] No such file or directory>
+2023-01-10 17:15:55,299 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 101, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 33, in youtube_source_function
+    filepath = youtube_video(url, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\youtube_video.py", line 6, in youtube_video
+    yt = YouTube(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 71, in __init__
+    self.video_id = extract.video_id(url)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\extract.py", line 133, in video_id
+    return regex_search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url, group=1)
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\helpers.py", line 129, in regex_search
+    raise RegexMatchError(caller="regex_search", pattern=pattern)
+pytube.exceptions.RegexMatchError: regex_search: could not find match for (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2023-01-10 17:16:20,774 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:16:22,229 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:17:50,378 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:17:51,732 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:18:33,212 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 90, in url_download
+    if urllib.request.urlopen(vd) == 200:
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 509, in open
+    req = Request(fullurl, data)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 328, in __init__
+    self.full_url = url
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 354, in full_url
+    self._parse()
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'e'
+2023-01-10 17:18:42,704 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 90, in url_download
+    if urllib.request.urlopen(vd) == 200:
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 640, in http_response
+    response = self.parent.error(
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\82107\anaconda3\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+2023-01-10 17:20:09,314 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:20:11,115 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:22:26,447 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:22:28,104 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:23:59,133 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:24:00,812 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:25:05,419 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:25:07,176 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:26:03,582 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:26:04,957 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:27:30,011 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:27:31,266 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:27:53,343 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 99, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 33, in youtube_source_function
+    filepath = youtube_video(url, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\youtube_video.py", line 7, in youtube_video
+    stream = yt.streams.get_highest_resolution()
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 295, in streams
+    self.check_availability()
+  File "C:\Users\82107\anaconda3\lib\site-packages\pytube\__main__.py", line 231, in check_availability
+    raise exceptions.VideoUnavailable(video_id=self.video_id)
+pytube.exceptions.VideoUnavailable: rightPeople is unavailable
+2023-01-10 17:28:49,456 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:38:18,118 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:47:37,141 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:47:38,459 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:48:42,562 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:48:43,893 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:49:38,011 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 17:52:36,672 [INFO] django.utils.autoreload: C:\dev\bigproject-1\translation\views.py changed, reloading.
+2023-01-10 17:52:37,925 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 22:09:32,586 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-10 22:16:08,820 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 99, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 40, in youtube_source_function
+    video_path = merge_video(link, ans, filepath, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\video_merge.py", line 60, in merge_video
+    speedx(file_list, num, ans)
+  File "C:\dev\bigproject-1\models\function\video_merge.py", line 35, in speedx
+    final_clip.speedx(t).write_videofile(os.getcwd() + f"/models/function/sentence/sentence_{n}.mp4")
+  File "<decorator-gen-55>", line 2, in write_videofile
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\decorators.py", line 54, in requires_duration
+    return f(clip, *a, **k)
+  File "<decorator-gen-54>", line 2, in write_videofile
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\decorators.py", line 135, in use_clip_fps_by_default
+    return f(clip, *new_a, **new_kw)
+  File "<decorator-gen-53>", line 2, in write_videofile
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\decorators.py", line 22, in convert_masks_to_RGB
+    return f(clip, *a, **k)
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\video\VideoClip.py", line 300, in write_videofile
+    ffmpeg_write_video(self, filename, fps, codec,
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\video\io\ffmpeg_writer.py", line 220, in ffmpeg_write_video
+    for t,frame in clip.iter_frames(logger=logger, with_times=True,
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\Clip.py", line 472, in iter_frames
+    frame = self.get_frame(t)
+  File "<decorator-gen-11>", line 2, in get_frame
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\decorators.py", line 89, in wrapper
+    return f(*new_a, **new_kw)
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\Clip.py", line 93, in get_frame
+    return self.make_frame(t)
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\Clip.py", line 136, in <lambda>
+    newclip = self.set_make_frame(lambda t: fun(self.get_frame, t))
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\Clip.py", line 187, in <lambda>
+    return self.fl(lambda gf, t: gf(t_func(t)), apply_to,
+  File "<decorator-gen-11>", line 2, in get_frame
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\decorators.py", line 89, in wrapper
+    return f(*new_a, **new_kw)
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\Clip.py", line 93, in get_frame
+    return self.make_frame(t)
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\video\compositing\concatenate.py", line 83, in make_frame
+    return clips[i].get_frame(t - tt[i])
+IndexError: list index out of range
+2023-01-10 22:16:09,048 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-10 23:07:42,584 [ERROR] django.request: Internal Server Error: /translation/url_download
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\bigproject-1\translation\views.py", line 99, in url_download
+    video_func.youtube_source_function(url=vd, writepath=writepath, filename=filename)
+  File "C:\dev\bigproject-1\models\function\main.py", line 40, in youtube_source_function
+    video_path = merge_video(link, ans, filepath, writepath, filename)
+  File "C:\dev\bigproject-1\models\function\video_merge.py", line 55, in merge_video
+    save_signlanguage_video(href, n, num)
+  File "C:\dev\bigproject-1\models\function\video_merge.py", line 18, in save_signlanguage_video
+    else: clip = clip.subclip(1, clip.duration).resize((560,360))
+  File "<decorator-gen-36>", line 2, in subclip
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\decorators.py", line 89, in wrapper
+    return f(*new_a, **new_kw)
+  File "<decorator-gen-35>", line 2, in subclip
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\decorators.py", line 29, in apply_to_mask
+    newclip = f(clip, *a, **k)
+  File "<decorator-gen-34>", line 2, in subclip
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\decorators.py", line 41, in apply_to_audio
+    newclip = f(clip, *a, **k)
+  File "C:\Users\82107\anaconda3\lib\site-packages\moviepy\Clip.py", line 385, in subclip
+    raise ValueError("t_start (%.02f) " % t_start +
+ValueError: t_start (1.00) should be smaller than the clip's duration (0.13).
+2023-01-11 09:08:55,664 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-11 09:24:19,126 [INFO] my: admin이가 로그아웃함 127.0.0.1
+2023-01-11 09:24:23,909 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-11 09:27:58,338 [INFO] my: admin이가 로그인함 127.0.0.1
+2023-01-12 15:05:01,943 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-16 10:03:47,085 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-01-16 10:04:56,877 [WARNING] django.request: Not Found: /favicon.ico
+2023-01-26 10:40:56,814 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-03-31 09:31:42,692 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-03-31 09:32:19,930 [WARNING] django.request: Not Found: /favicon.ico
+2023-03-31 09:43:03,677 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2023-03-31 09:43:05,371 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-03-31 13:57:16,614 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-03-31 13:57:42,280 [WARNING] django.request: Not Found: /favicon.ico
+2023-03-31 13:58:56,113 [INFO] my: new이가 회원가입함 봉영훈 bongyh@naver.com 127.0.0.1
+2023-03-31 14:01:16,172 [INFO] django.utils.autoreload: C:\dev\bigproject-1\mysite\settings.py changed, reloading.
+2023-03-31 14:01:17,670 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-03-31 14:01:25,468 [INFO] my: new이가 로그아웃함 127.0.0.1
+2023-03-31 14:01:44,438 [INFO] my: new이가 로그인함 127.0.0.1
+2023-03-31 14:01:53,052 [INFO] my: new이가 로그아웃함 127.0.0.1
+2023-03-31 14:02:02,163 [INFO] my: new이가 로그인함 127.0.0.1
+2023-03-31 14:02:05,361 [INFO] my: new이가 로그아웃함 127.0.0.1
+2023-04-06 18:02:14,574 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-04-06 18:08:41,106 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\views.py changed, reloading.
+2023-04-06 18:08:42,779 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-04-06 20:11:53,769 [INFO] django.utils.autoreload: C:\dev\bigproject-1\education\views.py changed, reloading.
+2023-04-06 20:11:55,195 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-14 16:46:16,738 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-14 16:54:39,487 [INFO] django.utils.autoreload: C:\dev\bigproject-1\board\views.py changed, reloading.
+2023-06-14 16:54:41,338 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-14 20:38:42,968 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-07-21 09:19:31,789 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-07-21 10:42:44,678 [WARNING] django.request: Not Found: /accounts/
+2023-07-21 11:05:28,503 [WARNING] django.request: Not Found: /favicon.ico
+2023-07-21 11:05:38,567 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-07-21 11:05:51,387 [WARNING] django.request: Not Found: /favicon.ico
+2023-07-21 11:06:46,051 [INFO] my: numpy이가 로그인함 127.0.0.1
+2023-08-02 10:31:46,811 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-08-02 10:32:16,310 [WARNING] django.request: Not Found: /favicon.ico
+2023-08-02 10:33:06,387 [INFO] my: numpy이가 로그아웃함 127.0.0.1
+2023-08-02 10:33:50,336 [INFO] my: numpy이가 로그인함 127.0.0.1
+2023-08-02 12:55:48,759 [INFO] my: numpy이가 로그아웃함 127.0.0.1
+2023-08-02 13:36:51,670 [INFO] my: numpy이가 로그인함 127.0.0.1
+2023-08-02 13:40:25,494 [INFO] my: numpy이가 로그아웃함 127.0.0.1
+2023-08-02 13:41:13,841 [INFO] my: numpy이가 비밀번호 찾기 실행 127.0.0.1
+2023-08-02 13:41:14,011 [ERROR] django.request: Internal Server Error: /accounts/login/password_reset_done
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\clickjacking.py", line 16, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 268, in password_reset_done
+    EmailMessage(subject='이메일 변경 내역입니다.', body='수어 스쿨의 새 비밀번호는 '+new_pw +'입니다. 다시 로그인해주세요.', to=[email_send], from_email=settings.EMAIL_HOST_USER).send()
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Users\82107\anaconda3\lib\smtplib.py", line 734, in login
+    raise last_exception
+  File "C:\Users\82107\anaconda3\lib\smtplib.py", line 723, in login
+    (code, resp) = self.auth(
+  File "C:\Users\82107\anaconda3\lib\smtplib.py", line 646, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.1 Username and Password not accepted cuOQqcUZRQ6WZ08m8eQxeA - nsmtp')
+2023-08-02 13:41:46,256 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-08-02 13:42:34,559 [INFO] my: numpy이가 비밀번호 찾기 실행 127.0.0.1
+2023-08-02 13:42:34,717 [ERROR] django.request: Internal Server Error: /accounts/login/password_reset_done
+Traceback (most recent call last):
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\views\decorators\clickjacking.py", line 16, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "C:\dev\bigproject-1\accounts\views.py", line 268, in password_reset_done
+    EmailMessage(subject='이메일 변경 내역입니다.', body='수어 스쿨의 새 비밀번호는 '+new_pw +'입니다. 다시 로그인해주세요.', to=[email_send], from_email=settings.EMAIL_HOST_USER).send()
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\82107\anaconda3\lib\site-packages\django\core\mail\backends\smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Users\82107\anaconda3\lib\smtplib.py", line 734, in login
+    raise last_exception
+  File "C:\Users\82107\anaconda3\lib\smtplib.py", line 723, in login
+    (code, resp) = self.auth(
+  File "C:\Users\82107\anaconda3\lib\smtplib.py", line 646, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.1 Username and Password not accepted UndThdi1T3+1Bg1Iarj4ew - nsmtp')
+2023-08-02 13:48:03,192 [INFO] my: matplotlib이가 로그인함 127.0.0.1
+2023-08-07 16:57:29,863 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-08-10 09:59:18,696 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-08-10 10:04:09,706 [INFO] my: matplotlib이가 로그아웃함 127.0.0.1
+2023-08-10 10:04:13,579 [WARNING] django.request: Not Found: /favicon.ico
+2023-08-10 10:05:04,061 [INFO] my: root이가 회원가입함 root root@naver.com 127.0.0.1
+2023-08-10 10:23:42,956 [INFO] django.utils.autoreload: C:\dev\bigproject-1\accounts\models.py changed, reloading.
+2023-08-10 10:23:44,281 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-03 18:33:50,118 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-03 18:34:11,989 [WARNING] django.request: Not Found: /favicon.ico
+2023-09-05 13:01:15,516 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-09-05 13:02:08,659 [WARNING] django.request: Not Found: /favicon.ico
+2023-09-05 13:02:25,400 [INFO] my: pandas이가 로그인함 127.0.0.1

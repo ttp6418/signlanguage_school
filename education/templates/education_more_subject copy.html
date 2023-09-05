@@ -1,0 +1,48 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with common landing page.">
+    <meta name="author" content="Devcrud">
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + common main styles -->
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+        <!-- Page Header -->
+    <header class="header header-mini"> 
+           <div class="header-title"><a href="/education/list">강의리스트</a></div>
+    </header>
+    <div class="container">
+        <section class="section" id="portfolio">
+            <div class="container text-center">
+                <div class="row">
+                    {% for vid in video %}
+                        <div class="col-md-4">
+                            <a href="./{{vid.video_title}}/" class="portfolio-card">
+                                {% if vid.video_thumb %}<img src= "/media/{{vid.video_thumb}}" width="260px" height="200px" class="portfolio-card-img"/>
+                                {% else %}<img src= "{% static 'imgs/왼손코딩.JPG' %}" width="260px" height="200px" class="portfolio-card-img"/>
+                                {% endif %}
+                                <span class="portfolio-card-overlay" >
+                                    <span class="portfolio-card-caption">
+                                        <p class="font-weight-normal">{{vid.video_text}}</p></span></span>
+                                        <a href="./{{vid.video_title}}/" id="education_title_border">
+                                            <h4 id="education_title">{{vid.video_title}}</h4>
+                                            {% comment %} <p class="font-weight-normal">{{vid.video_text}}</p> {% endcomment %}
+                                        </a>
+                                    </span>&emsp;
+                                </span>
+                            </a>
+                        </div>
+                    {% endfor %}            
+                </div>
+                {% if request.user.is_superuser and request.user.is_staff %}<div><a class="progress-bar bg-info" href="/education/write/{{id}}">강의 추가하기</a></div>{% endif %}
+            </div>
+        </section>
+    </div>
+</body>
+{% endblock %}

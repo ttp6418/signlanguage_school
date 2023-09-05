@@ -1,0 +1,44 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+<header class="header header-mini"> 
+    <div class="header-title">강의 추가하기</div> 
+</header> <!-- End Of Page Header -->
+<br><br>
+
+<div class="container">
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <h6 class="section-title mb-5">강의 추가하기</h6>
+            <!-- contact form -->
+            <form method="POST" action="education_morewrite_done" class="contact-form col-md-10 col-lg-8 m-auto" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <input type="text" size="50" class="form-control" placeholder="제목을 입력해주세요(필수)" name="title" required>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="text" id="text" rows="6"   class="form-control" placeholder="내용을 입력해주세요"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="number" class="form-control" placeholder="몇번째 강의인가요(숫자만)(필수)" name="index" required>    
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="password" class="form-control" placeholder="비밀번호" name="pw">    
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="file" name="thumb" id="thumb" class="form-control" placeholder="미리보기 입력" accept="image/*">                   
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="file" name="video" id="video" class="form-control" placeholder="비디오(필수)" accept="video/*" requried>                   
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="등록" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+</div>
+{% endblock %}

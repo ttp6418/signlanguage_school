@@ -1,0 +1,22 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+<header class="header header-mini"> 
+    <div class="header-title"><a href="/translation">음성 번역 서비스</a></div> 
+</header> <!-- End Of Page Header -->
+<br><br><br><br>
+<div class='container'>
+    <h4><b>사용자가 원하는 교육 파일 영상을 번역하는 서비스 화면입니다.<br> 파일을 업로드 하신 후 대기하면 교육 화면으로 전환됩니다.</b></h4>
+    <form action="mp4_download" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group col-sm-12">
+            <p><input type="file" name="video" id="video" class="form-control" placeholder="비디오(필수)" accept="video/*" requried>
+                <input type="checkbox" name="check_" value="확인하였습니다">아래 내용을 숙지하였으며, 서비스에 대한 문제로 인한 책임은 사용자 본인이 짊어집니다.<br>
+                <h2>서비스 이용 약관</h2><br>
+                <h6> 1. 저작권법 제 5조에 의거하여 원본 영상에 대해 원저작권자에게 해당 사이트에 업로드 한다는것을 허락 받아야 사용 가능한 서비스입니다.</h6>
+                <button type="submit" class="btn btn-outline-primary">업로드</button>
+            </p>                   
+        </div>
+    </form>
+</div>
+{% endblock %}

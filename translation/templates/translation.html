@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<header class="header header-mini"> 
+    <div class="header-title"><a href="/translation">음성 번역 서비스</a></div> 
+</header> <!-- End Of Page Header -->
+<div class='container'><br><br><br>
+    {% comment %} <div width="50%"><a href="./mp4_upload">[1] 정적파일 업로드[mp4]</a></div>
+    <div width="50%"><a href="./url_upload">[2] 외부링크 불러오기[url]</a></div>
+    <div width="50%"><a href="./download">[3] 프로그램 다운로드 하러가기</a></div> {% endcomment %}
+    <!-- service section -->
+    <section class="section" id="translate_view">
+        <div class="container text-center">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/pencil-case.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, common Landing page" class="icon">
+                            <br><br><a href="./mp4_upload"><h6 class="title" id="translate_title">[1] 정적파일 업로드[mp4]</h6></a>
+                            <p class="subtitle"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/responsive.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, common Landing page" class="icon">
+                            <br><br><a href="./url_upload"><h6 class="title" id="translate_title">[2] 외부링크 불러오기[url]</h6></a>
+                            <p class="subtitle"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'imgs/toolbox.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, common Landing page" class="icon">
+                            <br><br><a href="./download"><h6 class="title" id="translate_title">[3] 프로그램 다운로드 하러가기</h6></a>
+                            <p class="subtitle"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- </div>end of row -->
+        </div>
+    </section>
+    <!-- </section>end of service section -->
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+로그는 각 views에서 진행되는 사항을 단계별로 저장가능합니다.
+settings.py에서 설정 변경가능하며, LOGGING 부분을 수정하셔서 설정변경 가능합니다.
+또한 DEBUG = False로 변경해야 사용 가능하며, DEBUG < INFO < WARNING < ERROR < CRITICAL 순의 단계가 있으며, INFO 이상의 단계부터 기록되도록 설정하였습니다.
+
+import logging
+logger = logging.getLogger('my')
+logger.info(기록할 내용 + get_client_ip(request))
+를 통하여 my log 분야에 INFO 단계의 로그를 기록합니다. get_client_ip(request)는 해당 ip를 반환합니다.
+
+이후부터는 디버그 모드가 아닌 실제 모드라서 스태틱과 미디어 파일들이 제대로 안불러와지는 문제가 있는데, 이는 python manage.py runserver --insecure 를 통하여 해결가능합니다.
+실전에서의 파일 저장고와 장고 디버그 모드에서의 파일 저장고 위치가 달라서 발생하는 문제입니다.
+
+현재 설정해놓은 분야는 계정에대한 기록과 게시물 댓글에 대한 기록만 사용하고 있습니다.

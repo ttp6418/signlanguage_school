@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<header class="header header-mini"> 
+    <div class="header-title"><a href="/translation">음성 번역 서비스</a></div> 
+</header> <!-- End Of Page Header -->
+<br><br><br><br>
+<div class='container'>
+    <h1>다운로드</h1>
+    <h3>해당 프로그램은 스테레오믹스, 마이크를 통하여 사람의 음성을 실시간 인식하여 텍스트로 변환해주는 프로그램입니다.</h3>
+    <button onclick="location.href='/translation/download/window'"><h6>window용 실행파일 다운로드</h6></button><br>
+    <a href="https://www.flaticon.com/kr/free-icons/" title="아이콘 출처" target='_blank'>아이콘 제작자: smashingstocks - Flaticon</a>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with common landing page.">
+    <meta name="author" content="Devcrud">
+    <title>{{video.video_title}}</title>
+</head>
+{% include 'sidebar_new.html' %}
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page Header -->
+    <header class="header header-mini-education"> 
+    </header>
+    <!-- main content -->
+    <div class="container"><br>
+        <div class="row">
+            <h2 class="col-md-9" style="font-weight: 700;">[{{video.video_subject.subject_name}}] {{video.video_title}}</h2>
+            <a class="col-md-3" type="submit" onclick="location.href='/education/list/{{video.video_subject.subject_id}}'">목록으로 돌아가기</a>
+        </div>
+        <br>
+        <div>
+            <video class="video" src="{% static urls %}" controls muted></video>
+        <div><br>
+            <div class="row">
+                <h4 class="col-md-9">작성자 : {{video.video_author.user_nickname}}</h4>
+                <h4 class="col-md-3">조회수 : {{video.video_views}}</h4>
+            </div>
+            <br>
+            {% if video.video_subject.subject_original %}
+                <a href={{video.video_subject.subject_original}}><h4>&nbsp;출&nbsp;&nbsp;처&nbsp; : {{video.video_subject.subject_original}}</h4></a>
+            {% endif %}
+    </div>
+</body>
+{% endblock %}

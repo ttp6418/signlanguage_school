@@ -1,0 +1,22 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with common landing page.">
+    <meta name="author" content="Devcrud">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page Header -->
+    <header class="header header-mini-education"> 
+    </header>
+    <!-- main content -->
+    <div class="container"><br>
+        <div>
+            <video class="video" src="{% static urls %}" controls muted></video><br>
+            <button id="download" type="button" class="btn btn-primary rounded" onclick="location.href='/translation/view_download/{{video_no}}'">다운로드</button>
+        <div><br>
+    </div>
+</body>
+{% endblock %}

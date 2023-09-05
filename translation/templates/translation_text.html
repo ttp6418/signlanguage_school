@@ -1,0 +1,75 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<py-env>
+    - numpy
+    - pyaudio
+</py-env>
+<header class="header header-mini"> 
+    <div class="header-title"><a href="/translation">음성 번역 서비스</a></div> 
+</header> <!-- End Of Page Header -->
+<br><br><br><br>
+<div class='container'>
+    <button id="record" type="button" class="button is-primary">시작</button>
+    <button id="stop" type="button" class="button is-primary">끝내기</button>
+    <button id="clear" type="button" class="button is-danger">새로고침</button>
+    <h4>여기에 실시간 음성이 텍스트로 변환됩니다.</h4>
+    <textarea name="text" id="text" readonly></textarea>
+</div>
+<py-config>
+    packages = ['pyaudio']
+</py-config>
+<py-script>
+    import js
+    from js import document
+    # import asyncio
+    from pyodide import create_proxy
+    import pyaudio
+    import wave
+    import sys
+    import random
+
+
+    def clear(*args, **kwargs):
+        global text
+        text = ''
+        Element("text").write('')
+
+    def record(*args, **kwargs):
+        global text
+        global is_record
+        
+        is_record = True
+        text += '1'
+
+        Element("text").write(text)
+
+    def stop(*args, **kwargs):
+        global is_record
+
+        is_record = False
+
+        Element("text").write('')
+
+    global text
+    global is_record
+    text = ' '
+    is_record = False
+
+    document.getElementById("record").addEventListener("click", create_proxy(record))
+    document.getElementById("stop").addEventListener("click", create_proxy(stop))
+    document.getElementById("clear").addEventListener("click", create_proxy(clear))
+
+    CHUNK = 1024
+    FORMAT = pyaudio.paInt16
+    CHANNELS = 2
+    RATE = 44100
+    RECORD_SECONDS = 3600
+    filename = str(random.randint(0, 999999999999)).zfill(12)
+    try: os.mkdir(os.getcwd() + '/mysite/static/web1/' + filename + '.wav')
+    except: pass
+    WAVE_OUTPUT_FILENAME = os.getcwd() + '/mysite/static/web1/.wav'
+    print(WAVE_OUTPUT_FILENAME)
+</py-script>
+{% endblock %}

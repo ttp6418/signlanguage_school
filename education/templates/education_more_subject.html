@@ -1,0 +1,67 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with common landing page.">
+    <meta name="author" content="Devcrud">
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + common main styles -->
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+        <!-- Page Header -->
+    <header class="header header-mini"> 
+           <div class="header-title"><a href="/education/list">강의리스트</a></div>
+    </header>
+    <div class="container">
+        <section class="section" style="padding-top: 30px;">
+            <div class="row container text-center">
+                    <div class="col-md-4">
+                        {% for vid in video %}
+                            {% if vid.video_index == 0 %}
+                                <div class="col-md-4">
+                                    <a class="portfolio-card">
+                                        {% if vid.video_thumb %}<img src= "/media/{{vid.video_thumb}}" width="300px" height="200px" class="portfolio-card-img"/>
+                                        {% else %}<img src= "{% static 'imgs/왼손코딩.JPG' %}" width="300px" height="200px" class="portfolio-card-img"/>
+                                        {% endif %}
+                                        <a id="education_title_border">
+                                            <h4 id="education_title">{{vid.video_subject.subject_name}}</h4>
+                                        </a>
+                                    </a>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="col-md-8 text-left" id="education_list_border">
+                        <div class="col-md-12" id="education_list">
+                            <table class="table table-striped">
+                                <tr>
+                                    <th class="table-light" id="education_list_title">강의 목차</th>
+                                </tr>
+                                {% for vid in video %}
+                                    <tr>
+                                        <td class="row" id="edu_title_list">
+                                            <div class="col-md-10">
+                                                <a href="./{{vid.video_title}}/">
+                                                    <p id="education_list_title">{{vid.video_title}}</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2" id="education_list">
+                                                <a href="./{{vid.video_title}}/" id="education_list_watch">Watch now →</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        {% if request.user.is_superuser and request.user.is_staff %}<div><a class="progress-bar bg-info" href="/education/write/{{id}}">강의 추가하기</a></div>{% endif %}
+    </div>
+</body>
+{% endblock %}

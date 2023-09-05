@@ -1,0 +1,15 @@
+{% extends 'base_index.html' %}
+{% load static %}
+{% block content %}
+<header class="header header-mini"> 
+    <div class="header-title"><a href="/translation">음성 번역 서비스</a></div> 
+</header> <!-- End Of Page Header -->
+<br><br><br><br>
+<div class='container'>
+    <h2>입력방식</h2><h5>수어 번역은 처리 시간이 오래걸려 실시간 처리가 불가능합니다.</h5>
+    <img src="{% static 'imgs/text.png' %}"/><a href='./web/text'>
+    <h4>실시간 zoom <--> 텍스트 번역</h4>
+    <img src="{% static 'imgs/sign.png' %}"/><a href='./web/sign'>
+    <h4>실시간 마이크 <--> 텍스트 번역</h4>
+</div>
+{% endblock %}

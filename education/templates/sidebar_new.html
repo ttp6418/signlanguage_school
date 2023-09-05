@@ -1,0 +1,17 @@
+{% load static %}
+<nav class="sidebar">
+    <ul>
+        <li>
+            <a href="/education/list/{{video.video_subject.subject_id}}" class="sidebarLogo">
+                <img src="/media/{{video.video_subject.subject_thumb}}" alt="">
+                <span class="sidebarLogo-item">강의 목차</span>
+            </a>   
+        </li>
+        {% for videos in video_all %}
+            <li><a class="sidebar_a" href="/education/list/{{video.video_subject.subject_id}}/{{videos.video_title}}">
+                <i class="fas material-symbols-outlined"></i>
+                <span id="sidebar-item">{{videos.video_title}}</span>
+            </a></li>
+        {% endfor %}
+    </ul>
+</nav>
